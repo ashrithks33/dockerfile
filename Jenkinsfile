@@ -36,7 +36,7 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                bat 'docker push %ashrith%:v1'
+                bat 'docker push %DOCKER_IMAGE%:v1'
             }
         }
     }
